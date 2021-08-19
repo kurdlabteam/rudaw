@@ -1,0 +1,26 @@
+                <div class="live__broadcast">
+                    <div class="img-container video-container">
+                        <div id='player'></div>
+                        <div id='playeraudioOnly'></div>
+                        <div id="dvMessage" style="display: none; height: 50px; position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto; text-align: center; color: white; font-size: 20px; max-width: 500px; width: 100%; font-family: Myriad Pro, Arial">
+                            <span id="lblMessage">an error has occured or your browser is out of date please update</span>
+                            <script type="text/javascript" src="https://player.kwikmotion.com/ClientsTemplates/rudawtv/KwikLink_ea901976-49e8-4aa1-a318-95bf0fbf7bf7.js"></script>
+                                    <script>
+                                        kwikMotion("player", {
+                                            aspectratio: "16:9",
+                                            autostart: true,
+                                            mediaid: "RudawLive",
+
+                                            image: "http://betanew.rudaw.net/images/img-live-radio.jpg",
+                                            autostart: "true",
+                                            sources: [
+                                                { file: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/playlist.m3u8" },
+                                                { file: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/manifest.mpd" },
+                                                { file: "https://svs.itworkscdn.net/rudawlive/rudawlive.smil/Manifest" }],
+                                        });
+                                    </script>
+
+
+                        </div>
+                    </div>
+                </div>
